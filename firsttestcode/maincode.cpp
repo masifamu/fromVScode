@@ -18,6 +18,6 @@ using namespace std;
  */
 int main(){
     cout<<"hi first code from vscode editor"<<endl;
-    cout<<" Hi it's my first c++ program from vscode using g++ compiler: this is for today"<<endl;
+    cout<<" Hi it's my first c++ ................program from vscode using g++ compiler: this is for today"<<endl;
     return 0;
 }
