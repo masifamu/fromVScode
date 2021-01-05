@@ -1,9 +1,9 @@
 /**
  * @file maincode.cpp
  * @author Mohammad Asif (asif@punchline.in)
- * @brief 
+ * @brief This code is somenly dedicated to testing c++ code with vscode editor
  * @version 0.1
- * @date 2021-01-02
+ * @date 2021-01-06
  * 
  * @copyright Copyright (c) 2021
  * 
@@ -12,7 +12,7 @@
 using namespace std;
 
 /**
- * @brief my first test program
+ * @brief this is the main file
  * 
  * @return int 
  */
