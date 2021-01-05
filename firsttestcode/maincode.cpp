@@ -12,12 +12,31 @@
 using namespace std;
 
 /**
- * @brief this is the main file
+ * @brief the is the prototype for the function sum
+ * 
+ * @param a 
+ * @param b 
+ * @return int 
+ */
+int sum(int a, int b);
+/**
+ * @brief trying the add the comments to the main function
  * 
  * @return int 
  */
 int main(){
     cout<<"hi first code from vscode editor"<<endl;
     cout<<"making changes for github"<<endl;
+    cout<<"sum of two numbers is "<<sum(10,20)<<endl;
     return 0;
+}
+/**
+ * @brief definition of function sum
+ * 
+ * @param a 
+ * @param b 
+ * @return int 
+ */
+int sum(int a, int b){
+    return(a+b);
 }
