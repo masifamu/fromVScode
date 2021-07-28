@@ -15,3 +15,33 @@ int sum(){
 
     return 0;
 }
+
+/**
+ * @brief 
+ * This function counts the frequency of numbers entered through key board.
+ * Remember numbers should entered in increasing order else they will be individually printed
+ * 
+ * what if all the numbers entered are equal? nothing will print.
+ * what if all the numbers are different with no repition? works fine.
+ * 
+ * 
+ * Remember, to terminate the code you must write an invalid input like "end"
+ */
+void numberCounter(){
+    int number=0, currNum=0;
+
+    std::cout<<"Enter Numbers"<<std::endl;
+    if(std::cin>>number){
+        int cnt=1;
+        currNum = number;
+        while(std::cin>>number){
+            if(number == currNum){
+                cnt++;
+            }else{
+                std::cout << currNum << " occurs "<< cnt << " times" << std::endl;
+                cnt=1;
+                currNum = number;
+            }
+        }
+    }
+}

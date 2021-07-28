@@ -16,7 +16,9 @@ int main(){
 
     // cout<<"c="<<c<<endl;
     // cout<<"c="<<sum(3,4)<<endl;
-    sum();
+    
+    // sum();
+    numberCounter();
 
     return 0;
 }

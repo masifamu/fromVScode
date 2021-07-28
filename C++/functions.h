@@ -2,5 +2,6 @@
 #define __FUNCTIONS__
 
 int sum();
+void numberCounter();
 
 #endif
