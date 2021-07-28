@@ -1,13 +1,13 @@
 all: calculator
 
-calculator: main.o sumNumbers.o
-	g++ main.o sumNumbers.o -Wall -o calculator
+calculator: main.o functions.o
+	g++ main.o functions.o -Wall -o calculator
 
 main.o: main.cpp
 	g++ -c main.cpp
 
-sumNumbers.o: sumNumbers.cpp
-	g++ -c sumNumbers.cpp
+functions.o: functions.cpp
+	g++ -c functions.cpp
 
 clean:
 	rm *.o

@@ -1,5 +1,5 @@
 #include <iostream>
-#include "sumNumbers.h"
+#include "functions.h"
 
 using namespace std;
 

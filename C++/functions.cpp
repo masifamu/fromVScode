@@ -2,7 +2,7 @@
 /**
  * @brief this function takes input 1 2 3 4 end
  * at last one should write an invalid input so that the loop breaks.
- * 
+ * because std::cin does'nt treat enter as end of line character.
  * @return int 
  */
 int sum(){
@@ -15,4 +15,3 @@ int sum(){
 
     return 0;
 }
-
