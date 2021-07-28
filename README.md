@@ -3,6 +3,22 @@ Your introduction may be the only chance you have to engage with someone who com
 
 I generally include the table of contents in my introduction so readers can jump to a relevant section.
 
+## Screenshots
+
+<table>
+    <tr>
+        <td>
+            <img alt="open opps 1" src="docs/screenshots/open-opps-01.png">
+        </td>
+        <td>
+            <img alt="open opps 2" src="docs/screenshots/open-opps-02.png">
+        </td>
+        <td>
+            <img alt="open opps 3" src="docs/screenshots/open-opps-03.png">
+        </td>
+    </tr>
+</table>
+
 ## Table of Contents
 1. [About the Project](#about-the-project)
 1. [Project Status](#project-status)
