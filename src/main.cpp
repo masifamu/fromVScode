@@ -1,6 +1,7 @@
 // BLDC driver standalone example
 #include <SimpleFOC.h>
 
+//Enable this preprocessor switch to make this code compatible with hall sensor
 // #define ENABLE_HALL_SENSOR
 
 #ifdef ENABLE_HALL_SENSOR
