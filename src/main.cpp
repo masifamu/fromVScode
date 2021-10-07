@@ -27,6 +27,8 @@
 #define PHASE_CH_PIN 11
 #define PHASE_CL_PIN 3
 
+#define ENABLE_MOSFET_AND_DRIVER_POWER 8
+
 // BLDC motor & driver instance
 // BLDCMotor motor = BLDCMotor(pole pair number);
 /**
@@ -190,7 +192,7 @@ void setup() {
    *        _setPwmPair(pinB_h, pinB_l, dc_b*255.0, dead_zone*255.0);
    *              same as phase A
    *        _setPwmPair(pinC_h, pinC_l, dc_c*255.0, dead_zone*255.0);
-   *              same as phase A
+   *              same as phase A 
    */
   driver.enable();
 
@@ -204,6 +206,7 @@ void setup() {
   motor.linkDriver(&driver);
 
   // limiting motor movements
+  //changing hall sensor alignment voltage value
 #ifdef ENABLE_HALL_SENSOR  
   // aligning voltage [V]
   motor.voltage_sensor_align = 2;
@@ -221,7 +224,7 @@ void setup() {
   motor.velocity_limit = 20; // [rad/s] cca 50rpm
 
   // choose FOC modulation (optional)
-  motor.foc_modulation = FOCModulationType::Trapezoid_120;
+  motor.foc_modulation = FOCModulationType::SinePWM;
  
   //torque control type
   motor.torque_controller = TorqueControlType::voltage;
@@ -261,6 +264,9 @@ void setup() {
    */
   motor.init();
   
+  pinMode(ENABLE_MOSFET_AND_DRIVER_POWER, OUTPUT);
+  digitalWrite(ENABLE_MOSFET_AND_DRIVER_POWER, LOW);
+
 #ifdef ENABLE_HALL_SENSOR
   motor.initFOC();
 #endif
